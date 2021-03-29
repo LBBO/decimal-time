@@ -1,0 +1,14 @@
+.nav-bar {
+  display: flex;
+  gap: 1em;
+  padding: 0 2em;
+  position: sticky;
+
+  .spacer {
+    flex-grow: 1;
+  }
+
+  a {
+    cursor: pointer;
+  }
+}
