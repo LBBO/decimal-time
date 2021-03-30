@@ -98,7 +98,7 @@
     &.small {
       transform: rotate(calc(var(--progress-small-hand) * 360deg - 90deg));
 
-      ::after {
+      &::after {
         content: '';
         width: 6vmax;
         margin-right: 5.5vmax;
@@ -141,17 +141,6 @@
       left: 50%;
       top: 50%;
       z-index: 1;
-    }
-  }
-
-  /* Hands animation */
-  @keyframes rotation {
-    0% {
-      transform: rotate(0deg);
-    }
-
-    100% {
-      transform: rotate(1turn);
     }
   }
 }
