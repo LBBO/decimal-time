@@ -5,9 +5,9 @@
   position: relative;
   background-color: black;
   margin: 1em;
-  --padding: 0.8vmax;
-  width: calc(28vmax + 2 * var(--padding));
-  height: calc(28vmax + 2 * var(--padding));
+  --padding: 0.8vmin;
+  width: calc(28vmin + 2 * var(--padding));
+  height: calc(28vmin + 2 * var(--padding));
   padding: var(--padding);
   box-sizing: border-box;
   border-radius: 100%;
@@ -54,10 +54,10 @@
       // white circle in the middle
       content: '';
       background-color: white;
-      width: 1.3vmax;
-      height: 1.3vmax;
-      margin-top: -0.65vmax;
-      margin-left: -0.65vmax;
+      width: 1.3vmin;
+      height: 1.3vmin;
+      margin-top: -0.65vmin;
+      margin-left: -0.65vmin;
       border-radius: 100%;
       position: absolute;
       left: 50%;
@@ -76,7 +76,7 @@
       justify-content: flex-end;
       width: 100%;
       box-sizing: border-box;
-      padding: 0.5vmax;
+      padding: 0.5vmin;
       height: 100%;
       position: absolute;
       top: 0;
@@ -89,17 +89,17 @@
         content: '';
         background-color: white;
         border-radius: 200px;
-        width: 11.7vmax;
-        height: 1vmax;
-        margin-left: -0.3vmax;
+        width: 11.7vmin;
+        height: 1vmin;
+        margin-left: -0.3vmin;
       }
 
       &::before {
         content: '';
         background-color: white;
-        height: 0.5vmax;
-        width: 1.7vmax;
-        margin-left: -1.7vmax;
+        height: 0.5vmin;
+        width: 1.7vmin;
+        margin-left: -1.7vmin;
         display: block;
       }
 
@@ -108,8 +108,8 @@
 
         &::after {
           content: '';
-          width: 6vmax;
-          margin-right: 5.5vmax;
+          width: 6vmin;
+          margin-right: 5.5vmin;
         }
       }
     }
@@ -130,8 +130,8 @@
 
       &::before {
         content: '';
-        height: 0.29vmax;
-        width: 16vmax;
+        height: 0.29vmin;
+        width: 16vmin;
         background-color: orange;
         z-index: 1;
       }
@@ -139,11 +139,11 @@
       &::after {
         content: '';
         background-color: var(--screen-color);
-        box-shadow: 0 0 0 0.2vmax orange;
-        width: 0.5vmax;
-        height: 0.5vmax;
-        margin-top: -0.25vmax;
-        margin-left: -0.25vmax;
+        box-shadow: 0 0 0 0.2vmin orange;
+        width: 0.5vmin;
+        height: 0.5vmin;
+        margin-top: -0.25vmin;
+        margin-left: -0.25vmin;
         border-radius: 100%;
         position: absolute;
         left: 50%;
