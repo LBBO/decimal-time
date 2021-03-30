@@ -6,6 +6,8 @@
   position: relative;
   z-index: 1;
   box-sizing: border-box;
+
+  // custom stuff
   background-color: black;
   margin: 1em;
 
@@ -23,8 +25,7 @@
     height: 100%;
     border-radius: 100%;
     // lines
-    background-image:
-      repeating-conic-gradient(
+    background-image: repeating-conic-gradient(
         from 0deg,
         white 0deg 1deg,
         transparent 1deg var(--large-angle),
@@ -62,12 +63,14 @@
     );
   }
 
+  /* Clock hands */
   .hand {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     width: 100%;
-    //padding: 0.5vmax;
+    box-sizing: border-box;
+    padding: 0.5vmax;
     height: 100%;
     position: absolute;
     top: 0;
@@ -97,7 +100,8 @@
     &.small {
       animation: rotation 30s linear infinite;
 
-      &::after {
+      ::after {
+        content: '';
         width: 6vmax;
         margin-right: 5.5vmax;
       }
