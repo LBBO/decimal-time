@@ -1,146 +1,155 @@
 // CLock from https://codepen.io/equinusocio/pen/PoNYGGX
 
-.clock {
-  width: 28vmax;
-  height: 28vmax;
+:host {
+  display: block;
   position: relative;
-  z-index: 1;
-  box-sizing: border-box;
-
-  // custom stuff
   background-color: black;
   margin: 1em;
+  --padding: 0.8vmax;
+  width: calc(28vmax + 2 * var(--padding));
+  height: calc(28vmax + 2 * var(--padding));
+  padding: var(--padding);
+  box-sizing: border-box;
+  border-radius: 100%;
 
-  &::before {
-    // indicator lines background
-    --large-angle: calc(360deg / var(--large-intervals));
-    --small-angle: calc(var(--large-angle) / var(--small-intervals));
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+  .clock {
     width: 100%;
     height: 100%;
-    border-radius: 100%;
-    // lines
-    background-image: repeating-conic-gradient(
-        from 0deg,
-        white 0deg 1deg,
-        transparent 1deg var(--large-angle),
-        white var(--large-angle) var(--large-angle)
-    ),
-    repeating-conic-gradient(
-        hsl(0deg 0% 100% / 20%) 0deg 1deg,
-        transparent 1deg var(--small-angle),
-        hsl(0deg 0% 100% / 20%) var(--small-angle) var(--small-angle)
-    );
-    //black circle from center, covers the lines that actually originate there
-    mask-image: radial-gradient(
-        circle at center,
-        transparent 66%,
-        black 66.1%
-    );
-  }
-
-  &::after {
-    // white circle in the middle
-    content: '';
-    background-color: white;
-    width: 1.3vmax;
-    height: 1.3vmax;
-    margin-top: -0.65vmax;
-    margin-left: -0.65vmax;
-    border-radius: 100%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    mask-image: radial-gradient(
-        circle at center,
-        transparent 33%,
-        black 33.1%
-    );
-  }
-
-  /* Clock hands */
-  .hand {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0.5vmax;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     z-index: 1;
-    transform-origin: 50% 50%;
-    transform: rotate(calc(var(--progress-large-hand) * 360deg - 90deg));
-
-    &::after {
-      content: '';
-      background-color: white;
-      border-radius: 200px;
-      width: 11.7vmax;
-      height: 1vmax;
-      margin-left: -0.3vmax;
-    }
+    box-sizing: border-box;
 
     &::before {
+      // indicator lines background
+      --large-angle: calc(360deg / var(--large-intervals));
+      --small-angle: calc(var(--large-angle) / var(--small-intervals));
       content: '';
-      background-color: white;
-      height: 0.5vmax;
-      width: 1.7vmax;
-      margin-left: -1.7vmax;
-      display: block;
-    }
-
-    &.small {
-      transform: rotate(calc(var(--progress-small-hand) * 360deg - 90deg));
-
-      &::after {
-        content: '';
-        width: 6vmax;
-        margin-right: 5.5vmax;
-      }
-    }
-  }
-
-  /* Seconds hand*/
-  .chrono {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 2;
-    transform-origin: 50% 50%;
-    transform: rotate(calc(var(--progress-chrono) * 360deg - 90deg));
-
-    &::before {
-      content: '';
-      height: 0.29vmax;
-      width: 16vmax;
-      background-color: orange;
-      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      // lines
+      background-image: repeating-conic-gradient(
+          from 0deg,
+          white 0deg 1deg,
+          transparent 1deg var(--large-angle),
+          white var(--large-angle) var(--large-angle)
+      ),
+      repeating-conic-gradient(
+          hsl(0deg 0% 100% / 20%) 0deg 1deg,
+          transparent 1deg var(--small-angle),
+          hsl(0deg 0% 100% / 20%) var(--small-angle) var(--small-angle)
+      );
+      //black circle from center, covers the lines that actually originate there
+      mask-image: radial-gradient(
+          circle at center,
+          transparent 66%,
+          black 66.1%
+      );
     }
 
     &::after {
+      // white circle in the middle
       content: '';
-      background-color: var(--screen-color);
-      box-shadow: 0 0 0 0.2vmax orange;
-      width: 0.5vmax;
-      height: 0.5vmax;
-      margin-top: -0.25vmax;
-      margin-left: -0.25vmax;
+      background-color: white;
+      width: 1.3vmax;
+      height: 1.3vmax;
+      margin-top: -0.65vmax;
+      margin-left: -0.65vmax;
       border-radius: 100%;
       position: absolute;
       left: 50%;
       top: 50%;
+      mask-image: radial-gradient(
+          circle at center,
+          transparent 33%,
+          black 33.1%
+      );
+    }
+
+    /* Clock hands */
+    .hand {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0.5vmax;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
       z-index: 1;
+      transform-origin: 50% 50%;
+      transform: rotate(calc(var(--progress-large-hand) * 360deg - 90deg));
+
+      &::after {
+        content: '';
+        background-color: white;
+        border-radius: 200px;
+        width: 11.7vmax;
+        height: 1vmax;
+        margin-left: -0.3vmax;
+      }
+
+      &::before {
+        content: '';
+        background-color: white;
+        height: 0.5vmax;
+        width: 1.7vmax;
+        margin-left: -1.7vmax;
+        display: block;
+      }
+
+      &.small {
+        transform: rotate(calc(var(--progress-small-hand) * 360deg - 90deg));
+
+        &::after {
+          content: '';
+          width: 6vmax;
+          margin-right: 5.5vmax;
+        }
+      }
+    }
+
+    /* Seconds hand*/
+    .chrono {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 2;
+      transform-origin: 50% 50%;
+      transform: rotate(calc(var(--progress-chrono) * 360deg - 90deg));
+
+      &::before {
+        content: '';
+        height: 0.29vmax;
+        width: 16vmax;
+        background-color: orange;
+        z-index: 1;
+      }
+
+      &::after {
+        content: '';
+        background-color: var(--screen-color);
+        box-shadow: 0 0 0 0.2vmax orange;
+        width: 0.5vmax;
+        height: 0.5vmax;
+        margin-top: -0.25vmax;
+        margin-left: -0.25vmax;
+        border-radius: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+      }
     }
   }
 }
