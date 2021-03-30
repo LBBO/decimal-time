@@ -1,11 +1,13 @@
+<!-- Clock from https://codepen.io/equinusocio/pen/PoNYGGX -->
+
 <div class="clock" *ngIf="timeService">
-  <div class="hour-indicator" *ngFor="let i of timeService.clockIntervals">
-    {{ i }}
-  </div>
-  <span *ngFor="let time$ of timeService.getTime(); let i = index">
-    {{ time$ | async }}{{ i === timeService.getTime().length - 1 ? '' : ':' }}
-  </span>
-  <!--  <div class="chrono"></div>-->
-  <!--  <div class="hand"></div>-->
-  <!--  <div class="hand small"></div>-->
+  <!--  <div class="hour-indicator" *ngFor="let i of timeService.clockIntervals">-->
+  <!--    {{ i }}-->
+  <!--  </div>-->
+  <!--  <span *ngFor="let time$ of timeService.getTime(); let i = index">-->
+  <!--    {{ time$ | async }}{{ i === timeService.getTime().length - 1 ? '' : ':' }}-->
+  <!--  </span>-->
+  <div class="chrono"></div>
+  <div class="hand"></div>
+  <div class="hand small"></div>
 </div>
