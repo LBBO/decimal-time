@@ -14,7 +14,13 @@ export class NormalTimeService implements OnDestroy, ITimeService {
   minutes$ = this.#minutes$.pipe(distinctUntilChanged())
   hours$ = this.#hours$.pipe(distinctUntilChanged())
   readonly #interval?: ReturnType<typeof setInterval>
+
   clockIntervals = new Array(12).fill(1).map((_, index) => index + 1)
+  readonly numOfLargeIntervals = 12
+  readonly numOfSmallIntervals = 5
+  readonly maxSmallHandValue = 12
+  readonly maxLargeHandValue = 60
+  readonly maxChronoValue = 60
 
   constructor() {
     this.#interval = setInterval(this.updateTime.bind(this), 100)

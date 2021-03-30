@@ -8,6 +8,11 @@ import { distinctUntilChanged } from 'rxjs/operators'
 })
 export class VTimeService implements ITimeService, OnDestroy {
   readonly clockIntervals = new Array(100).fill(1).map((_, index) => index)
+  readonly numOfLargeIntervals = 10
+  readonly numOfSmallIntervals = 10
+  readonly maxSmallHandValue = 100
+  readonly maxLargeHandValue = 10
+  readonly maxChronoValue = 100
 
   #milliV$ = new Subject<number>()
   #deciV$ = new Subject<number>()

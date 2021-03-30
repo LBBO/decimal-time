@@ -11,13 +11,6 @@
   background-color: black;
   margin: 1em;
 
-  --large-intervals: 10;
-  --small-intervals: 10;
-
-  --progress-large-hand: 0.1;
-  --progress-small-hand: 0.3;
-  --progress-chrono: 0.9;
-
   &::before {
     // indicator lines background
     --large-angle: calc(360deg / var(--large-intervals));
