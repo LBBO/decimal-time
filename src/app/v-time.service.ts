@@ -41,7 +41,7 @@ export class VTimeService implements ITimeService, OnDestroy {
     const millisecondsPerDay = 24 * 60 * 60 * 1000
     const millisecondsPerV = millisecondsPerDay / 10
     const millisecondsPerDeciV = millisecondsPerV / 100
-    const millisecondsPerMilliV = millisecondsPerV / 1_000
+    const millisecondsPerMilliV = millisecondsPerV / 10_000
     const now = new Date()
     const totalMinutesPassed = now.getHours() * 60 + now.getMinutes()
     const totalSecondsPassed = totalMinutesPassed * 60 + now.getSeconds()
