@@ -10,8 +10,8 @@ export class VTimeService implements ITimeService, OnDestroy {
   readonly clockIntervals = new Array(100).fill(1).map((_, index) => index)
   readonly numOfLargeIntervals = 10
   readonly numOfSmallIntervals = 10
-  readonly maxSmallHandValue = 100
-  readonly maxLargeHandValue = 10
+  readonly maxSmallHandValue = 10
+  readonly maxLargeHandValue = 100
   readonly maxChronoValue = 100
 
   #milliV$ = new Subject<number>()
@@ -39,8 +39,8 @@ export class VTimeService implements ITimeService, OnDestroy {
 
   private updateTime(): void {
     const millisecondsPerDay = 24 * 60 * 60 * 1000
-    const millisecondsPerV = millisecondsPerDay / 100
-    const millisecondsPerDeciV = millisecondsPerV / 10
+    const millisecondsPerV = millisecondsPerDay / 10
+    const millisecondsPerDeciV = millisecondsPerV / 100
     const millisecondsPerMilliV = millisecondsPerV / 1_000
     const now = new Date()
     const totalMinutesPassed = now.getHours() * 60 + now.getMinutes()
@@ -51,8 +51,8 @@ export class VTimeService implements ITimeService, OnDestroy {
       Math.floor(totalMillisecondsPassed / millisecondsPerMilliV) % 100,
     )
     this.#deciV$.next(
-      Math.floor(totalMillisecondsPassed / millisecondsPerDeciV) % 10,
+      Math.floor(totalMillisecondsPassed / millisecondsPerDeciV) % 100,
     )
-    this.#v$.next(Math.floor(totalMillisecondsPassed / millisecondsPerV) % 100)
+    this.#v$.next(Math.floor(totalMillisecondsPassed / millisecondsPerV) % 10)
   }
 }

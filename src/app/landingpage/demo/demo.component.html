@@ -1,0 +1,65 @@
+<h3>What would a clock look like?</h3>
+<mat-card class="normal-time">
+  <mat-card-header>
+    <mat-card-title>Normal time</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="card-content">
+    <app-clock [timeService]="normalTimeService"></app-clock>
+    <p>
+      This is how you are used to measuring time. There are 24 hours in a day,
+      60 minutes in an hour, and 60 seconds in a minute. You probably learned
+      this in pre-school.
+    </p>
+    <p>
+      These weird numbers make no real sense and are a frequent nuisance. For
+      example, try figuring out how many seconds are in three and a half hours.
+      Or try converting 72 k/h to m/s. Or figure out at what time 20% of the day
+      have passed. These calculations are unnecessarily confusing, aren't they?
+    </p>
+  </mat-card-content>
+</mat-card>
+<mat-card class="decimal-time">
+  <mat-card-header>
+    <mat-card-title>
+      Decimal time
+      <mat-icon
+        matTooltip="Decimal time units are emphasized; normal time units are not."
+      >
+        info_outlined
+      </mat-icon>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="card-content">
+    <app-clock [timeService]="vTimeService"></app-clock>
+    <p>
+      As opposed to the standard time measuring system, this system divides
+      units into multiples of 10. The day is divided into 10 <em>hours</em>, one
+      <em>hour</em> is divided into 100 <em>minutes</em> and one
+      <em>minute</em> is divided into 100 <em>seconds</em>.
+    </p>
+    <p>
+      Since we represent numbers in the decimal system, decimal time allows us
+      to convert between units by simply moving the decimal point:
+    </p>
+    <ul>
+      <li>
+        3.5 <em>hours</em> to <em>seconds</em>? Multiply by 100*100 (or move the
+        decimal point four digits to the right): 3500 <em>seconds</em>.
+      </li>
+      <li>
+        72 k/<em>h</em> to m/<em>s</em>? 1000 meters in a kilometer, 100
+        <em>seconds</em> in an <em>hour</em>, so we multiply by 1000/100=10 (or
+        move the decimal point 3-2=1 digit to the right): 720 m/<em>s</em>.
+      </li>
+      <li>
+        20% of the day? There are 10 <em>hours</em> in a day, so that would be
+        exactly 2:00 o'clock. This also means an added bonus of easily
+        converting something like 0.1415 days into <em>hours</em>: you just have
+        to add the correct colons after one, three, and five digits (and add
+        zeroes, if necessary)! So, 0.1415 days would be 1 <em>hour</em>, 41
+        <em>minutes</em> and 50
+        <em>seconds</em>
+      </li>
+    </ul>
+  </mat-card-content>
+</mat-card>

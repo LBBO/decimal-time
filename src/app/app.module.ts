@@ -8,6 +8,7 @@ import { NavigationComponent } from './navigation/navigation.component'
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { LandingpageRoutingModule } from './landingpage/landingpage-routing.module'
 import { ClockModule } from './clock/clock.module'
+import { LandingpageModule } from './landingpage/landingpage.module'
 
 @NgModule({
   declarations: [AppComponent, NavigationComponent],
@@ -18,6 +19,7 @@ import { ClockModule } from './clock/clock.module'
     BrowserAnimationsModule,
     MatToolbarModule,
     ClockModule,
+    LandingpageModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

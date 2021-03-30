@@ -1,6 +1,4 @@
 import { Component } from '@angular/core'
-import { NormalTimeService } from './normal-time.service'
-import { VTimeService } from './v-time.service'
 
 @Component({
   selector: 'app-root',
@@ -9,9 +7,4 @@ import { VTimeService } from './v-time.service'
 })
 export class AppComponent {
   title = 'decimal-time'
-
-  constructor(
-    public normalTimeService: NormalTimeService,
-    public vTimeService: VTimeService,
-  ) {}
 }
