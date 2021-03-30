@@ -1,2 +1,6 @@
 <app-navigation></app-navigation>
+<div style="height: 500px">
+  <app-clock [timeService]="normalTimeService"></app-clock>
+  <app-clock [timeService]="vTimeService"></app-clock>
+</div>
 <router-outlet></router-outlet>

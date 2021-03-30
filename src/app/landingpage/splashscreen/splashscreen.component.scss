@@ -1,0 +1,21 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+
+  height: calc(100vh - 64px);
+  background-color: #37405e;
+  z-index: -1;
+  color: white;
+
+  h1 {
+    font-size: 4em;
+  }
+
+  p {
+    max-width: 70ch;
+    text-align: center;
+  }
+}
