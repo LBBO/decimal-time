@@ -9,11 +9,6 @@
   }
 
   a {
-    cursor: pointer;
     text-decoration: none;
-
-    &, &:focus, &:active, &:visited {
-      color: inherit;
-    }
   }
 }
