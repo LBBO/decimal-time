@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+  min-height: calc(100vh - 64px);
+  justify-content: center;
+  align-items: start;
+  padding: 2em;
+
+  mat-card {
+    p {
+      max-width: 70ch;
+    }
+
+    mat-divider {
+      margin-bottom: 12px;
+    }
+  }
+}

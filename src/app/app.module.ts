@@ -12,9 +12,14 @@ import { LandingpageModule } from './landingpage/landingpage.module'
 import { ScullyLibModule } from '@scullyio/ng-lib'
 import { HistoryModule } from './history/history.module'
 import { HistoryRoutingModule } from './history/history-routing.module'
+import { AboutComponent } from './about/about.component'
+import { MatCardModule } from '@angular/material/card'
+import { MatButtonModule } from '@angular/material/button'
+import { MatIconModule } from '@angular/material/icon'
+import { MatDividerModule } from '@angular/material/divider'
 
 @NgModule({
-  declarations: [AppComponent, NavigationComponent],
+  declarations: [AppComponent, NavigationComponent, AboutComponent],
   imports: [
     BrowserModule,
     LandingpageRoutingModule,
@@ -26,6 +31,10 @@ import { HistoryRoutingModule } from './history/history-routing.module'
     LandingpageModule,
     HistoryModule,
     ScullyLibModule,
+    MatCardModule,
+    MatButtonModule,
+    MatIconModule,
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

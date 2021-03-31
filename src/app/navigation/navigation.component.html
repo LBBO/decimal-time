@@ -1,6 +1,15 @@
 <mat-toolbar color="primary" class="nav-bar">
-  <span>Decimal time</span>
+  <a [routerLink]="['']">Decimal time</a>
   <div class="spacer"></div>
-  <a [routerLink]="['']">About</a>
   <a [routerLink]="['history']">History</a>
+  <a [routerLink]="['about']">About</a>
+  <a
+    mat-button
+    mat-icon-button
+    aria-label="View the code on GitHub"
+    target="_blank"
+    href="https://github.com/LBBO/decimal-time"
+  >
+    <img src="assets/GitHub-Mark-Light-32px.png" />
+  </a>
 </mat-toolbar>
