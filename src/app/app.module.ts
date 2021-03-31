@@ -8,7 +8,8 @@ import { NavigationComponent } from './navigation/navigation.component'
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { LandingpageRoutingModule } from './landingpage/landingpage-routing.module'
 import { ClockModule } from './clock/clock.module'
-import { LandingpageModule } from './landingpage/landingpage.module'
+import { LandingpageModule } from './landingpage/landingpage.module';
+import { ScullyLibModule } from '@scullyio/ng-lib'
 
 @NgModule({
   declarations: [AppComponent, NavigationComponent],
@@ -20,6 +21,7 @@ import { LandingpageModule } from './landingpage/landingpage.module'
     MatToolbarModule,
     ClockModule,
     LandingpageModule,
+    ScullyLibModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
