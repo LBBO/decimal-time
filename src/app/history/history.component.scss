@@ -2,16 +2,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2em;
 
   padding: 2em;
 
   mat-card {
     max-width: 70ch;
 
-    .french-flag {
-      background-image: url('~src/assets/french-flag.png');
-      background-size: contain;
+    .flag {
+      background-size: cover;
       background-position: 50% 50%;
+      background-repeat: no-repeat;
+
+      &.french-flag {
+        background-image: url('~src/assets/french-flag.png');
+      }
+
+      &.chinese-flag {
+        background-image: url('~src/assets/chinese-flag.png');
+      }
     }
 
     figure {
