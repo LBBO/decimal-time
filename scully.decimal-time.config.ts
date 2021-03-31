@@ -21,7 +21,7 @@ const wslConfig: Partial<ScullyConfig> = {
 }
 
 export const config: ScullyConfig = {
-  ...wslConfig,
+  // ...wslConfig,
   projectRoot: './src',
   projectName: 'decimal-time',
   outDir: './dist/static',
