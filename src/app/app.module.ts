@@ -10,17 +10,21 @@ import { LandingpageRoutingModule } from './landingpage/landingpage-routing.modu
 import { ClockModule } from './clock/clock.module'
 import { LandingpageModule } from './landingpage/landingpage.module'
 import { ScullyLibModule } from '@scullyio/ng-lib'
+import { HistoryModule } from './history/history.module'
+import { HistoryRoutingModule } from './history/history-routing.module'
 
 @NgModule({
   declarations: [AppComponent, NavigationComponent],
   imports: [
     BrowserModule,
     LandingpageRoutingModule,
+    HistoryRoutingModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     ClockModule,
     LandingpageModule,
+    HistoryModule,
     ScullyLibModule,
   ],
   providers: [],

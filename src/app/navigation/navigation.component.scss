@@ -1,6 +1,6 @@
 .nav-bar {
   display: flex;
-  gap: 1em;
+  gap: 2em;
   padding: 0 2em;
   position: sticky;
 
@@ -10,5 +10,10 @@
 
   a {
     cursor: pointer;
+    text-decoration: none;
+
+    &, &:focus, &:active, &:visited {
+      color: inherit;
+    }
   }
 }

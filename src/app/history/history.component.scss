@@ -1,0 +1,44 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+
+  padding: 2em;
+
+  mat-card {
+    max-width: 70ch;
+
+    .flag {
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+
+      &.french-flag {
+        background-image: url('~src/assets/french-flag.png');
+      }
+
+      &.chinese-flag {
+        background-image: url('~src/assets/chinese-flag.png');
+      }
+    }
+
+    figure {
+      img {
+        width: 100%;
+      }
+
+      figcaption {
+        padding: 0 1em;
+        text-align: center;
+        font-style: italic;
+      }
+    }
+
+    a {
+      &:visited, &:focus, &:active {
+        color: inherit;
+      }
+    }
+  }
+}
