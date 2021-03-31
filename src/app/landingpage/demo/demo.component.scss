@@ -43,7 +43,8 @@
       margin: 2em 0;
     }
 
-    p, ul {
+    p,
+    ul {
       max-width: 70ch;
     }
   }
@@ -56,7 +57,7 @@
     grid-area: decimal;
 
     em {
-      font-family: "Times New Roman", serif;
+      font-family: 'Times New Roman', serif;
       font-weight: bolder;
     }
   }
