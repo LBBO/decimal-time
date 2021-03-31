@@ -36,17 +36,17 @@
           white 0deg 1deg,
           transparent 1deg var(--large-angle),
           white var(--large-angle) var(--large-angle)
-      ),
-      repeating-conic-gradient(
+        ),
+        repeating-conic-gradient(
           hsl(0deg 0% 100% / 20%) 0deg 1deg,
           transparent 1deg var(--small-angle),
           hsl(0deg 0% 100% / 20%) var(--small-angle) var(--small-angle)
-      );
+        );
       //black circle from center, covers the lines that actually originate there
       mask-image: radial-gradient(
-          circle at center,
-          transparent 66%,
-          black 66.1%
+        circle at center,
+        transparent 66%,
+        black 66.1%
       );
     }
 
@@ -63,9 +63,9 @@
       left: 50%;
       top: 50%;
       mask-image: radial-gradient(
-          circle at center,
-          transparent 33%,
-          black 33.1%
+        circle at center,
+        transparent 33%,
+        black 33.1%
       );
     }
 
