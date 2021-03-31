@@ -1,15 +1,42 @@
-<mat-toolbar color="primary" class="nav-bar">
-  <a [routerLink]="['']">Decimal time</a>
-  <div class="spacer"></div>
-  <a [routerLink]="['history']">History</a>
-  <a [routerLink]="['about']">About</a>
-  <a
-    mat-button
+<mat-toolbar
+  color="primary"
+  class="nav-bar"
+  [class.is-small]="isScreenSmall$ | async"
+>
+  <mat-menu #appMenu="matMenu">
+    <a mat-menu-item [routerLink]="['']"> Home </a>
+    <a mat-menu-item [routerLink]="['history']"> History </a>
+    <a mat-menu-item [routerLink]="['about']"> About </a>
+    <a
+      mat-menu-item
+      href="https://github.com/LBBO/decimal-time"
+      target="_blank"
+    >
+      Visit on GitHub
+    </a>
+  </mat-menu>
+  <button
+    *ngIf="isScreenSmall$ | async"
     mat-icon-button
-    aria-label="View the code on GitHub"
-    target="_blank"
-    href="https://github.com/LBBO/decimal-time"
+    [matMenuTriggerFor]="appMenu"
+    aria-label="Open Navigation"
+    class="menu"
   >
-    <img src="assets/GitHub-Mark-Light-32px.png" />
-  </a>
+    <mat-icon>menu</mat-icon>
+  </button>
+  <a [routerLink]="['']">Decimal time</a>
+  <ng-template [ngIf]="!(isScreenSmall$ | async)">
+    <div class="spacer"></div>
+    <a [routerLink]="['history']">History</a>
+    <a [routerLink]="['about']">About</a>
+    <a
+      mat-button
+      mat-icon-button
+      aria-label="View the code on GitHub"
+      target="_blank"
+      href="https://github.com/LBBO/decimal-time"
+    >
+      <img src="assets/GitHub-Mark-Light-32px.png" />
+    </a>
+  </ng-template>
 </mat-toolbar>

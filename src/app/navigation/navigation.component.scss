@@ -12,3 +12,10 @@
     text-decoration: none;
   }
 }
+
+@media (max-width: 539px) {
+  .nav-bar {
+    padding: 0;
+    gap: 0;
+  }
+}
