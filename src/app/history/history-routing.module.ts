@@ -4,8 +4,8 @@ import { HistoryComponent } from './history.component'
 
 const routes: Routes = [
   {
-    path: 'history',
-    children: [{ path: '', pathMatch: 'full', component: HistoryComponent }],
+    path: '',
+    component: HistoryComponent,
   },
 ]
 
