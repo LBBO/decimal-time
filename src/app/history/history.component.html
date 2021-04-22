@@ -1,15 +1,18 @@
 <mat-card>
   <mat-card-header>
     <div mat-card-avatar class="flag french-flag"></div>
-    <mat-card-title>France</mat-card-title>
-    <mat-card-subtitle>1794 - During the French Revolution</mat-card-subtitle>
+    <mat-card-title i18n="french history title">France</mat-card-title>
+    <mat-card-subtitle i18n="french history subtitle">
+      1794 - During the French Revolution
+    </mat-card-subtitle>
   </mat-card-header>
   <figure mat-card-image>
     <img
       src="assets/french-revolution-clock.jpg"
+      i18n-alt="french decimal clock image alt text"
       alt="Photo of a decimal clock from the french revolution"
     />
-    <figcaption>
+    <figcaption i18n="french decimal clock image caption and credit">
       The face of a decimal clock in neo-classical style.
       <a
         href="https://en.wikipedia.org/wiki/File:Decimal_Clock_face_by_Pierre_Daniel_Destigny_1798-1805.jpg"
@@ -19,7 +22,7 @@
       </a>
     </figcaption>
   </figure>
-  <mat-card-content>
+  <mat-card-content i18n="french history description">
     <p>
       Several different efforts to switch to decimal time were made in France
       throughout history. The most notable of which, however, was during the
@@ -40,40 +43,29 @@
       mat-button
       target="_blank"
       href="https://en.wikipedia.org/wiki/Decimal_time#France"
-      >Read more</a
+      i18n="read more| Read more button label"
     >
+      Read more
+    </a>
   </mat-card-actions>
 </mat-card>
 
 <mat-card>
   <mat-card-header>
     <div mat-card-avatar class="flag chinese-flag"></div>
-    <mat-card-title>China</mat-card-title>
-    <mat-card-subtitle>1st millennium BC</mat-card-subtitle>
+    <mat-card-title i18n="chinese history title">China</mat-card-title>
+    <mat-card-subtitle i18n="chinese history subtitle"
+      >1st millennium BC</mat-card-subtitle
+    >
   </mat-card-header>
-  <!--  <figure mat-card-image>-->
-  <!--    <img-->
-  <!--      src="assets/french-revolution-clock.jpg"-->
-  <!--      alt="Photo of a decimal clock from the french revolution"-->
-  <!--    />-->
-  <!--    <figcaption>-->
-  <!--      Photo of a decimal clock from the french revolution.-->
-  <!--      <a-->
-  <!--        href="https://en.wikipedia.org/wiki/File:Decimal_Clock_face_by_Pierre_Daniel_Destigny_1798-1805.jpg"-->
-  <!--        target="_blank"-->
-  <!--      >-->
-  <!--        Photo by DeFacto-->
-  <!--      </a>-->
-  <!--    </figcaption>-->
-  <!--  </figure>-->
-  <mat-card-content>
+  <mat-card-content i18n="chinese history description">
     <p>
       Chinese use of decimal time started by the 1st millennium BC. It was used
       alongside the standard time system and slightly differed from the system
       that was later adopted in France and that is explained on this site.
       Instead of dividing the day into 10 units of time, the Chinese divided it
       into 100 units called <em>ke</em>. However, this was changed from time to
-      time. For example, from 5 to 3 BC, days were divided into 120 <em></em>.
+      time. For example, from 5 to 3 BC, days were divided into 120 <em>ke</em>.
     </p>
   </mat-card-content>
   <mat-card-actions align="end">
@@ -81,7 +73,9 @@
       mat-button
       target="_blank"
       href="https://en.wikipedia.org/wiki/Decimal_time#China"
-      >Read more</a
+      i18n="read more|Read more button label"
     >
+      Read more
+    </a>
   </mat-card-actions>
 </mat-card>

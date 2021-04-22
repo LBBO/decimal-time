@@ -4,13 +4,18 @@
   [class.is-small]="isScreenSmall$ | async"
 >
   <mat-menu #appMenu="matMenu">
-    <a mat-menu-item [routerLink]="['']"> Home </a>
-    <a mat-menu-item [routerLink]="['history']"> History </a>
-    <a mat-menu-item [routerLink]="['about']"> About </a>
+    <a mat-menu-item [routerLink]="['']" i18n="home|Home link"> Home </a>
+    <a mat-menu-item [routerLink]="['history']" i18n="history|History link">
+      History
+    </a>
+    <a mat-menu-item [routerLink]="['about']" i18n="about|About link">
+      About
+    </a>
     <a
       mat-menu-item
       href="https://github.com/LBBO/decimal-time"
       target="_blank"
+      i18n="github|GitHub link"
     >
       Visit on GitHub
     </a>
@@ -24,15 +29,16 @@
   >
     <mat-icon>menu</mat-icon>
   </button>
-  <a [routerLink]="['']">Decimal time</a>
+  <a [routerLink]="['']" i18n="title">Decimal time</a>
   <ng-template [ngIf]="!(isScreenSmall$ | async)">
     <div class="spacer"></div>
-    <a [routerLink]="['history']">History</a>
-    <a [routerLink]="['about']">About</a>
+    <a [routerLink]="['history']" i18n="history|History link">History</a>
+    <a [routerLink]="['about']" i18n="about|About link">About</a>
     <a
       mat-button
       mat-icon-button
-      aria-label="View the code on GitHub"
+      i18n-aria-label="github|GitHub link"
+      aria-label="Visit on GitHub"
       target="_blank"
       href="https://github.com/LBBO/decimal-time"
     >
