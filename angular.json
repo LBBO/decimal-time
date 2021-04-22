@@ -5,6 +5,9 @@
   "projects": {
     "decimal-time": {
       "projectType": "application",
+      "i18n": {
+        "sourceLocale": "en-US"
+      },
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
