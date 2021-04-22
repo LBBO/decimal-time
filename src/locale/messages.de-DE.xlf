@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+  <file source-language="de-DE" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="5407091552143649071" datatype="html">
         <source> Please don&apos;t take this page too seriously. One day, a friend and I wanted to figure out what would happen if time were based on multiples of 10 and after doing some math, we found out that this concept already existed and has been implemented in multiple countries and cultures. </source>
+        <target>
+          Bitte nehmen Sie diese Seite nicht zu ernst. Irgendwann wollten ein Freund und ich mal überlegen, was
+          passieren würde, wenn die Zeit auf Vielfachen von 10 basieren würde, und nachdem wir ein wenig rumgerechnet
+          haben, haben wir rausgefunden, dass das Konzept bereits in mehreren Ländern und Kulturen existiert hat.
+         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/about/about.component.html</context>
           <context context-type="linenumber">9,13</context>
@@ -15,6 +20,10 @@
       <trans-unit id="5211200427824684367" datatype="html">
         <source> The awesome CSS clock was originally created by Mattia Astorino and can be found <x id="START_LINK" ctype="x-a" equiv-text="&lt;a target=&quot;_blank&quot; href=&quot;https://codepen.io/equinusocio/pen/PoNYGGX&quot;&gt;"/> here on CodeSandbox <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
       &gt;"/>. </source>
+        <target> Die hervorragende CSS Uhr wurde ursprünglich von Mattia Astorino erstellt und kann <x
+        id="START_LINK" ctype="x-a" equiv-text="&lt;a target=&quot;_blank&quot; href=&quot;https://codepen
+        .io/equinusocio/pen/PoNYGGX&quot;&gt;"/> hier auf CodeSandbox <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
+      &gt;"/> gefunden werden. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/about/about.component.html</context>
           <context context-type="linenumber">24,29</context>
@@ -24,6 +33,7 @@
       </trans-unit>
       <trans-unit id="956678847762152494" datatype="html">
         <source>France</source>
+        <target>Frankreich</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/history/history.component.html</context>
           <context context-type="linenumber">4</context>
@@ -32,6 +42,7 @@
       </trans-unit>
       <trans-unit id="4934354621003762473" datatype="html">
         <source> 1794 - During the French Revolution </source>
+        <target> 1794 - Während der Französischen Revolution </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/history/history.component.html</context>
           <context context-type="linenumber">6,7</context>
@@ -40,6 +51,7 @@
       </trans-unit>
       <trans-unit id="7722009567603326993" datatype="html">
         <source>Photo of a decimal clock from the french revolution</source>
+        <target>Foto einer Dezimaluhr aus der Französischen Revolution</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/history/history.component.html</context>
           <context context-type="linenumber">13</context>
@@ -51,6 +63,10 @@
         href=&quot;https://en.wikipedia.org/wiki/File:Decimal_Clock_face_by_Pierre_Daniel_Destigny_1798-1805.jpg&quot;
         target=&quot;_blank&quot;
       &gt;"/> Photo by DeFacto <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <target> Das Uhrenblatt einer Dezimaluhr im neoklassischen Stil. <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+        href=&quot;https://en.wikipedia.org/wiki/File:Decimal_Clock_face_by_Pierre_Daniel_Destigny_1798-1805.jpg&quot;
+        target=&quot;_blank&quot;
+      &gt;"/> Foto von DeFacto <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/history/history.component.html</context>
           <context context-type="linenumber">16,22</context>
@@ -59,6 +75,9 @@
       </trans-unit>
       <trans-unit id="6064010672953789734" datatype="html">
         <source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/> Several different efforts to switch to decimal time were made in France throughout history. The most notable of which, however, was during the French Revolution. As part of a larger attempt at decimalisation (including switching to the metric system), France adopted decimal time on 22 September 1794. Its use was mandatory until 7 April 1795. <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/> During that time, clocks were produced with both decimal and standard time, allowing for an easier conversion period. However, decimal time never caught on. In addition to decimalizing time, France also started dividing months into three <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>décades <x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/> of 10 days each. This change, however wasn&apos;t abolished until 1805. <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></source>
+        <target><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/> In Frankreich gab es im Laufe der Zeit mehrere verschiedene Bemühungen, zur Dezimalzeit zu wechseln. Die bemerkenswerteste darunter war während der Französischen Revolution. Im Rahmen einer umfassenderen Bewegung der Dezimalisierung (dabei wurde u.a. zu metrischen Einheiten gewechselt) hat Frankreich am 22. September 1794 die Dezimalzeit eingeführt. Ihre Verwendung war bis zum 7. April 1795 verpflichtend. <x
+        id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/><x id="START_PARAGRAPH" ctype="x-p"
+        equiv-text="&lt;p&gt;"/> Während dieser Zeit wurden Uhren mit sowohl normaler als auch dezimaler Zeitanzeige hergestellt, um die Übergangsphase zu erleichtern. Allerdings hat sich die Dezimalzeit nicht halten können. Zusätzlich zur Dezimalisierung der Zeit hat Frankreich auch angefangen, Monate in je drei <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>décades <x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/> von je 10 Tagen zu unterteilen. Diese Änderung konnte sich sogar bis 1805 halten. <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/history/history.component.html</context>
           <context context-type="linenumber">26,39</context>
@@ -67,6 +86,7 @@
       </trans-unit>
       <trans-unit id="7370070738310896752" datatype="html">
         <source> Read more </source>
+        <target> Mehr lesen </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/history/history.component.html</context>
           <context context-type="linenumber">48,49</context>
@@ -80,6 +100,7 @@
       </trans-unit>
       <trans-unit id="5134090110001463731" datatype="html">
         <source>China</source>
+        <target>China</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/history/history.component.html</context>
           <context context-type="linenumber">56</context>
@@ -88,6 +109,7 @@
       </trans-unit>
       <trans-unit id="262627866840416195" datatype="html">
         <source>1st millennium BC</source>
+        <target>1. Millennium v.C.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/history/history.component.html</context>
           <context context-type="linenumber">58</context>
@@ -96,6 +118,11 @@
       </trans-unit>
       <trans-unit id="31723343686006967" datatype="html">
         <source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/> Chinese use of decimal time started by the 1st millennium BC. It was used alongside the standard time system and slightly differed from the system that was later adopted in France and that is explained on this site. Instead of dividing the day into 10 units of time, the Chinese divided it into 100 units called <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>ke<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>. However, this was changed from time to time. For example, from 5 to 3 BC, days were divided into 120 <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>ke<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>. <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></source>
+        <target><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/> Der chinesische Einsatz der Dezimalzeit begann bereits im 1. Millennium v.C. Sie wurde zusätzlich zur Standardzeit genutzt und wich etwas von dem in Frankreich umgesetzten System ab (s.o.). Statt den Tag in 10 Einheiten zu unterteilen, wurde er in China in 100 sog. <x id="START_EMPHASISED_TEXT" ctype="x-em"
+        equiv-text="&lt;em&gt;"/>ke<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/> eingeteilt.
+        Dies hat sich von Zeit zu Zeit aber verändert. Beispielsweise wurden zwischen 5 und 3 v.C. die Tage in 120 <x
+        id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>ke<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em"
+         equiv-text="&lt;/em&gt;"/> unterteilt. <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/history/history.component.html</context>
           <context context-type="linenumber">62,69</context>
@@ -104,6 +131,7 @@
       </trans-unit>
       <trans-unit id="6832879550227262389" datatype="html">
         <source>Comparison</source>
+        <target>Vergleich</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/landingpage/demo/demo.component.html</context>
           <context context-type="linenumber">1</context>
@@ -112,6 +140,7 @@
       </trans-unit>
       <trans-unit id="8926567047186783072" datatype="html">
         <source>Standard time</source>
+        <target>Standardzeit</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/landingpage/demo/demo.component.html</context>
           <context context-type="linenumber">4</context>
@@ -121,6 +150,10 @@
       <trans-unit id="5535644104664084638" datatype="html">
         <source><x id="START_TAG_APP_CLOCK" ctype="x-app_clock" equiv-text="&lt;app-clock [timeService]=&quot;
         normalTimeService&quot;&gt;"/><x id="CLOSE_TAG_APP_CLOCK" ctype="x-app_clock" equiv-text="&lt;/app-clock&gt;"/><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/> This is how you are used to measuring time. There are 24 hours in a day, 60 minutes in an hour, and 60 seconds in a minute. You probably learned this in pre-school. <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/> These weird numbers make no real sense and are a frequent nuisance. For example, try figuring out how many seconds are in three and a half hours. Or try converting 72 kp/h to m/s. Or figure out at what time 20% of the day have passed. These calculations are unnecessarily confusing, aren&apos;t they? <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></source>
+        <target><x id="START_TAG_APP_CLOCK" ctype="x-app_clock" equiv-text="&lt;app-clock [timeService]=&quot;
+        normalTimeService&quot;&gt;"/><x id="CLOSE_TAG_APP_CLOCK" ctype="x-app_clock" equiv-text="&lt;/app-clock&gt;
+        "/><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/> So sind Sie es gewohnt, Zeit auszudrücken. Ein Tag hat 24 Stunden, eine Stunde besteht aus 60 Minuten und eine Minute enthält 60 Sekunden. Vermutlich haben Sie das bereits im Kindergarten gelernt. <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/><x id="START_PARAGRAPH" ctype="x-p"
+        equiv-text="&lt;p&gt;"/> Diese eigenartigen Zahlen ergeben keinen wirklichen Sinn und sorgen häufig für nervige Rechenprobleme. Versuchen Sie doch mal beispielsweise herauszufinden, aus wie vielen Sekunden dreieinhalb Stunden bestehen. Oder konvertieren Sie mal 72 km/h zu m/s. Oder berechnen Sie, um wie viel Uhr exakt 20% eines Tages vorbei sind. Diese Berechnungen sind unnötig kompliziert, oder? <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/landingpage/demo/demo.component.html</context>
           <context context-type="linenumber">7,19</context>
@@ -135,6 +168,13 @@
         &quot;
         matTooltip=&quot;Decimal time units are emphasized; normal time units are not.&quot;
       &gt;"/> info_outlined <x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/></source>
+        <target> Dezimalzeit <x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon
+        i18n-matTooltip=&quot;
+          unit notation hint|Advise users that decimal units are empfasized
+          (i.e. italic) while standard units are not
+        &quot;
+        matTooltip=&quot;Decimal time units are emphasized; normal time units are not.&quot;
+      &gt;"/> info_outlined <x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/landingpage/demo/demo.component.html</context>
           <context context-type="linenumber">25,34</context>
@@ -143,6 +183,7 @@
       </trans-unit>
       <trans-unit id="1722850224174374708" datatype="html">
         <source>Decimal time units are emphasized; normal time units are not.</source>
+        <target>Dezimaleinheiten sind hervorgehoben; normale Einheiten nicht.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/landingpage/demo/demo.component.html</context>
           <context context-type="linenumber">31</context>
@@ -153,6 +194,48 @@
       </trans-unit>
       <trans-unit id="6600365255279002550" datatype="html">
         <source><x id="START_TAG_APP_CLOCK" ctype="x-app_clock" equiv-text="&lt;app-clock [timeService]=&quot;vTimeService&quot;&gt;"/><x id="CLOSE_TAG_APP_CLOCK" ctype="x-app_clock" equiv-text="&lt;/app-clock&gt;"/><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/> As opposed to the standard time measuring system, this system divides units into multiples of 10. The day is divided into 10 <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>hours<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>, one <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>hour<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/> is divided into 100 <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>minutes<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/> and one <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>minute<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/> is divided into 100 <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>seconds<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>. <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/> Since we represent numbers in the decimal system, decimal time allows us to convert between units by simply moving the decimal point: <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/><x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/> 3.5 <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>hours<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/> to <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>seconds<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>? Multiply by 100*100 (or move the decimal point four digits to the right): 3500 <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>seconds<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>. <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/> 72 km/<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>h<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/> to m/<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>s<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>? 1000 meters in a kilometer, 100 <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>seconds<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/> in an <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>hour<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>, so we multiply by 1000/100=10 (or move the decimal point 3-2=1 digit to the right): 720 m/<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>s<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>. <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/> 20% of the day? There are 10 <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>hours<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/> in a day, so that would be exactly 2:00 o&apos;clock. This also means an added bonus of easily converting something like 0.1415 days into <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>hours<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>: you just have to add the correct colons after one, three, and five digits (and add zeroes, if necessary)! So, 0.1415 days would be 1 <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>hour<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>, 41 <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>minutes<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/> and 50 <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>seconds<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/><x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul&gt;"/></source>
+        <target><x id="START_TAG_APP_CLOCK" ctype="x-app_clock" equiv-text="&lt;app-clock [timeService]=&quot;
+        vTimeService&quot;&gt;"/><x id="CLOSE_TAG_APP_CLOCK" ctype="x-app_clock" equiv-text="&lt;/app-clock&gt;"/><x
+        id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/> Im Gegensatz zur Standardzeit, unterteilt diese Zeitrechnung den Tag in Vielfache von 10. Ein Tag besteht aus 10 <x id="START_EMPHASISED_TEXT"
+        ctype="x-em" equiv-text="&lt;em&gt;"/>Stunden<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;
+        "/>, eine <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Stunde<x
+        id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/> besteht aus 100 <x
+        id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Minuten<x id="CLOSE_EMPHASISED_TEXT"
+        ctype="x-em" equiv-text="&lt;/em&gt;"/> und eine <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;
+        em&gt;"/>Minute<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/> besteht aus 100 <x
+        id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Sekunden<x id="CLOSE_EMPHASISED_TEXT"
+        ctype="x-em" equiv-text="&lt;/em&gt;"/>. <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/><x
+        id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/> Da wir Zahlen dezimal ausdrücken, erlaubt uns die
+        Dezimalzeit eine Umrechnung schlicht durch Verschiebung des Kommas: <x id="CLOSE_PARAGRAPH" ctype="x-p"
+        equiv-text="&lt;/p&gt;"/><x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul&gt;"/><x
+        id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/> 3.5 <x id="START_EMPHASISED_TEXT" ctype="x-em"
+        equiv-text="&lt;em&gt;"/>Stunden<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/> in <x
+        id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Sekunden<x id="CLOSE_EMPHASISED_TEXT"
+        ctype="x-em" equiv-text="&lt;/em&gt;"/>? Einfach mit 100 * 100 multiplizieren (oder das Komma um 4 Stellen
+        nach rechts verschieben): 3500 <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Sekunden<x
+        id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>. <x id="CLOSE_LIST_ITEM" ctype="x-li"
+        equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/> 72 km/<x
+        id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>h<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em"
+        equiv-text="&lt;/em&gt;"/> in m/<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>s<x
+        id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>? 1000 Meter in einem Kilometer, 100 <x
+        id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Sekunden<x id="CLOSE_EMPHASISED_TEXT"
+        ctype="x-em" equiv-text="&lt;/em&gt;"/> in einer <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;
+        em&gt;"/>Stunde<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>, also multiplizieren wir
+         mit 1000/100 = 10 (oder wir verschieben das Komma um 3 - 2 = 1 Stellen nach rechts): 720 m/<x
+         id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>s<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em"
+          equiv-text="&lt;/em&gt;"/>. <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x
+          id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/> 20% eines Tages? Es gibt 10 <x
+          id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Stunden<x id="CLOSE_EMPHASISED_TEXT"
+          ctype="x-em" equiv-text="&lt;/em&gt;"/> pro Tag, also wäre das genau um 2 Uhr. Dadurch zeigt sich auch ein
+          zusätzlicher Bonus, der es uns erlaubt, mit Leichtigkeit aus Angaben wie 0,1415 Tagen die <x
+          id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Stunden<x id="CLOSE_EMPHASISED_TEXT"
+          ctype="x-em" equiv-text="&lt;/em&gt;"/> zu bestimmen: man muss einfach nur nach der ersten, der dritten und
+           der fünften Stelle Doppelpunkte einfügen (und ggf. Nullen auffüllen)! Damit wären 0,1415 Tage genau 1 <x
+           id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Stunde<x id="CLOSE_EMPHASISED_TEXT"
+           ctype="x-em" equiv-text="&lt;/em&gt;"/>, 41 <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;
+           em&gt;"/>Minuten<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/> und 50 <x
+           id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Sekunden<x id="CLOSE_EMPHASISED_TEXT"
+           ctype="x-em" equiv-text="&lt;/em&gt;"/><x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/landingpage/demo/demo.component.html</context>
           <context context-type="linenumber">38,68</context>
@@ -161,6 +244,7 @@
       </trans-unit>
       <trans-unit id="1165314745521545295" datatype="html">
         <source>It&apos;s time to fix time!</source>
+        <target>Es ist an der Zeit, die Zeit zu reparieren!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/landingpage/splashscreen/splashscreen.component.html</context>
           <context context-type="linenumber">2</context>
@@ -170,19 +254,25 @@
       <trans-unit id="3373151740145689206" datatype="html">
         <source> Why are all units based on multiples of ten <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>except time<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>? <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Let&apos;s change that.
 </source>
+        <target> Wieso basieren alle Einheiten auf Vielfachen von 10, <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;
+        em&gt;"/>außer der Zeit<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>? <x
+        id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Ändern wir das!
+</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/landingpage/splashscreen/splashscreen.component.html</context>
           <context context-type="linenumber">4,7</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6694216016599673733" datatype="html">
-        <source> Photo by <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+        <source> Foto von <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
     target=&quot;_blank&quot;
     href=&quot;https://unsplash.com/@fabrizioverrecchia?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&quot;
-  &gt;"/> Fabrizio Verrecchia <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> on <x id="START_LINK_1" equiv-text="&lt;a
+  &gt;"/> Fabrizio Verrecchia <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> auf <x id="START_LINK_1"
+  equiv-text="&lt;a
     target=&quot;_blank&quot;
     href=&quot;https://unsplash.com/s/photos/time?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&quot;
   &gt;"/> Unsplash <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <target></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/landingpage/splashscreen/splashscreen.component.html</context>
           <context context-type="linenumber">14,27</context>
@@ -191,6 +281,7 @@
       </trans-unit>
       <trans-unit id="3258810871691147574" datatype="html">
         <source> Home </source>
+        <target>Start</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navigation/navigation.component.html</context>
           <context context-type="linenumber">7</context>
@@ -200,6 +291,7 @@
       </trans-unit>
       <trans-unit id="1256998732064906817" datatype="html">
         <source> History </source>
+        <target>Vergangenheit</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navigation/navigation.component.html</context>
           <context context-type="linenumber">9,10</context>
@@ -209,6 +301,7 @@
       </trans-unit>
       <trans-unit id="6328413396853436601" datatype="html">
         <source> About </source>
+        <target>Über</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navigation/navigation.component.html</context>
           <context context-type="linenumber">12,13</context>
@@ -218,6 +311,7 @@
       </trans-unit>
       <trans-unit id="7350703430163738049" datatype="html">
         <source> Visit on GitHub </source>
+        <target>Auf GitHub besuchen</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navigation/navigation.component.html</context>
           <context context-type="linenumber">20,21</context>
@@ -227,6 +321,7 @@
       </trans-unit>
       <trans-unit id="4007972916214901556" datatype="html">
         <source>Decimal time</source>
+        <target>Dezimalzeit</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navigation/navigation.component.html</context>
           <context context-type="linenumber">32</context>
@@ -235,6 +330,7 @@
       </trans-unit>
       <trans-unit id="5014368660143400072" datatype="html">
         <source>History</source>
+        <target>Vergangenheit</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navigation/navigation.component.html</context>
           <context context-type="linenumber">35</context>
@@ -244,6 +340,7 @@
       </trans-unit>
       <trans-unit id="2608668766934698369" datatype="html">
         <source>About</source>
+        <target>Über</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navigation/navigation.component.html</context>
           <context context-type="linenumber">36</context>
@@ -253,6 +350,7 @@
       </trans-unit>
       <trans-unit id="401809800375236953" datatype="html">
         <source>Visit on GitHub</source>
+        <target>Auf GitHub besuchen</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navigation/navigation.component.html</context>
           <context context-type="linenumber">41</context>

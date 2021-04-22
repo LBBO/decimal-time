@@ -6,7 +6,10 @@
     "decimal-time": {
       "projectType": "application",
       "i18n": {
-        "sourceLocale": "en-US"
+        "sourceLocale": "en-US",
+        "locales": {
+          "de-DE": "src/locale/messages.de-DE.xlf"
+        }
       },
       "schematics": {
         "@schematics/angular:component": {
