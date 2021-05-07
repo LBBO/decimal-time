@@ -5,7 +5,7 @@ import { homepage } from './package.json'
 const defaultPostRenderers = ['seoHrefOptimise', baseHrefRewrite]
 const homepageUrl = new URL(homepage)
 setPluginConfig(baseHrefRewrite, {
-  href: homepageUrl.pathname,
+  href: homepageUrl.pathname + process.env.LOCALE,
 })
 
 export const config: ScullyConfig = {

@@ -352,7 +352,7 @@
           <context context-type="linenumber">28</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4007972916214901556" datatype="html">
+      <trans-unit id="nav-title" datatype="html">
         <source>Decimal time</source>
         <target>Dezimalzeit</target>
         <context-group purpose="location">
