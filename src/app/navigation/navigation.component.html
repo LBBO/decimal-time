@@ -4,18 +4,18 @@
   [class.is-small]="isScreenSmall$ | async"
 >
   <mat-menu #appMenu="matMenu">
-    <a mat-menu-item [routerLink]="['']" i18n="home|Home link"> Home </a>
-    <a mat-menu-item [routerLink]="['history']" i18n="history|History link">
+    <a mat-menu-item [routerLink]="['']" i18n="home|Home link@@nav-home"> Home </a>
+    <a mat-menu-item [routerLink]="['history']" i18n="history|History link@@nav-history">
       History
     </a>
-    <a mat-menu-item [routerLink]="['about']" i18n="about|About link">
+    <a mat-menu-item [routerLink]="['about']" i18n="about|About link@@nav-about">
       About
     </a>
     <a
       mat-menu-item
       href="https://github.com/LBBO/decimal-time"
       target="_blank"
-      i18n="github|GitHub link"
+      i18n="github|GitHub link@@nav-github"
     >
       Visit on GitHub
     </a>
@@ -24,20 +24,21 @@
     *ngIf="isScreenSmall$ | async"
     mat-icon-button
     [matMenuTriggerFor]="appMenu"
+    i18n-aria-label='@@nav-open-popup'
     aria-label="Open Navigation"
     class="menu"
   >
     <mat-icon>menu</mat-icon>
   </button>
-  <a [routerLink]="['']" i18n="title">Decimal time</a>
+  <a [routerLink]="['']" i18n="title@@nav-title">Decimal time</a>
   <ng-template [ngIf]="!(isScreenSmall$ | async)">
     <div class="spacer"></div>
-    <a [routerLink]="['history']" i18n="history|History link">History</a>
-    <a [routerLink]="['about']" i18n="about|About link">About</a>
+    <a [routerLink]="['history']" i18n="history|History link@@nav-history">History</a>
+    <a [routerLink]="['about']" i18n="about|About link@@nav-about">About</a>
     <a
       mat-button
       mat-icon-button
-      i18n-aria-label="github|GitHub link"
+      i18n-aria-label="github|GitHub link@@nav-github"
       aria-label="Visit on GitHub"
       target="_blank"
       href="https://github.com/LBBO/decimal-time"
