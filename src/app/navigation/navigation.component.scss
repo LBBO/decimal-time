@@ -13,6 +13,15 @@
   }
 }
 
+a.flag {
+  display: grid;
+  align-items: center;
+
+  img {
+    height: 1em;
+  }
+}
+
 @media (max-width: 539px) {
   .nav-bar {
     padding: 0;

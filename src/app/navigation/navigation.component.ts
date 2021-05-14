@@ -1,11 +1,7 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, Inject, LOCALE_ID, OnInit } from '@angular/core'
 import { fromEvent, Observable } from 'rxjs'
-import {
-  distinctUntilChanged,
-  map,
-  startWith,
-  throttleTime,
-} from 'rxjs/operators'
+import { distinctUntilChanged, filter, map, startWith } from 'rxjs/operators'
+import { NavigationEnd, Router } from '@angular/router'
 
 @Component({
   selector: 'app-navigation',
@@ -14,8 +10,16 @@ import {
 })
 export class NavigationComponent implements OnInit {
   isScreenSmall$?: Observable<boolean>
+  url$ = this.router.events.pipe(
+    filter((event): event is NavigationEnd => event instanceof NavigationEnd),
+    map((event) => event.url),
+  )
+  baseURI = document.baseURI
 
-  constructor() {}
+  constructor(
+    public router: Router,
+    @Inject(LOCALE_ID) public locale: string,
+  ) {}
 
   ngOnInit(): void {
     // Checks if screen size is less than 1024 pixels
