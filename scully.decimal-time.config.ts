@@ -5,13 +5,14 @@ import { homepage } from './package.json'
 const defaultPostRenderers = ['seoHrefOptimise', baseHrefRewrite]
 const homepageUrl = new URL(homepage)
 setPluginConfig(baseHrefRewrite, {
-  href: homepageUrl.pathname + process.env.LOCALE,
+  href: `${homepageUrl.pathname + process.env.LOCALE}/`,
 })
 
 export const config: ScullyConfig = {
   defaultPostRenderers,
   projectRoot: './src',
   projectName: 'decimal-time',
-  outDir: './dist/static',
+  distFolder: `dist/decimal-time/${process.env.LOCALE}`,
+  outDir: `./dist/static/${process.env.LOCALE}`,
   routes: {},
 }
