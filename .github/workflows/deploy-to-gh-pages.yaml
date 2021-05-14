@@ -37,6 +37,9 @@ jobs:
           NODE_ENV: production
           LOCALE: en-US
 
+      - name: Add index.html to scully build
+        run: npm run createIndexHtmlForScully
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

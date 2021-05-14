@@ -14,6 +14,7 @@
     "scully:en": "LOCALE=en-US && npx scully",
     "scully:de": "LOCALE=de-DE && npx scully",
     "scully": "npm run scully:de && npm run scully:en",
+    "createIndexHtmlForScully": "ts-node createIndexHtml.ts",
     "scully:serve": "npx scully serve --"
   },
   "private": true,
