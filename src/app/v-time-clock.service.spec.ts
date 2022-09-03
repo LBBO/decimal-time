@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing'
 
-import { VTimeService } from './v-time.service'
+import { VTimeClockService } from './v-time-clock.service'
 
 describe('VTimeService', () => {
-  let service: VTimeService
+  let service: VTimeClockService
 
   beforeEach(() => {
     TestBed.configureTestingModule({})
-    service = TestBed.inject(VTimeService)
+    service = TestBed.inject(VTimeClockService)
   })
 
   it('should be created', () => {

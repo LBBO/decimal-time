@@ -19,7 +19,7 @@ type NormalTime = {
 @Injectable({
   providedIn: 'root',
 })
-export class VTimeService implements ITimeService, OnDestroy {
+export class VTimeClockService implements ITimeService, OnDestroy {
   readonly clockIntervals = new Array(100).fill(1).map((_, index) => index)
   readonly numOfLargeIntervals = 10
   readonly numOfSmallIntervals = 10

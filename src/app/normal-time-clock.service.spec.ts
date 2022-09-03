@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing'
 
-import { NormalTimeService } from './normal-time.service'
+import { NormalTimeClockService } from './normal-time-clock.service'
 
 describe('NormalTimeService', () => {
-  let service: NormalTimeService
+  let service: NormalTimeClockService
 
   beforeEach(() => {
     TestBed.configureTestingModule({})
-    service = TestBed.inject(NormalTimeService)
+    service = TestBed.inject(NormalTimeClockService)
   })
 
   it('should be created', () => {

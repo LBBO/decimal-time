@@ -6,7 +6,7 @@ import { ITimeService } from './ITimeService'
 @Injectable({
   providedIn: 'root',
 })
-export class NormalTimeService implements OnDestroy, ITimeService {
+export class NormalTimeClockService implements OnDestroy, ITimeService {
   #seconds$ = new Subject<number>()
   #minutes$ = new Subject<number>()
   #hours$ = new Subject<number>()
