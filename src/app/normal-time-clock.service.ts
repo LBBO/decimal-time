@@ -1,45 +1,12 @@
-import { Injectable, OnDestroy } from '@angular/core'
-import { Observable, Subject } from 'rxjs'
-import { distinctUntilChanged } from 'rxjs/operators'
-import { ITimeService } from './ITimeService'
+import { Injectable } from '@angular/core'
+import { NormalTimeService } from './normal-time.service'
+import { ControllableNormalTimeClockService } from './controllable-normal-time-clock-service'
 
 @Injectable({
   providedIn: 'root',
 })
-export class NormalTimeClockService implements OnDestroy, ITimeService {
-  #seconds$ = new Subject<number>()
-  #minutes$ = new Subject<number>()
-  #hours$ = new Subject<number>()
-  seconds$ = this.#seconds$.pipe(distinctUntilChanged())
-  minutes$ = this.#minutes$.pipe(distinctUntilChanged())
-  hours$ = this.#hours$.pipe(distinctUntilChanged())
-  readonly #interval?: ReturnType<typeof setInterval>
-
-  clockIntervals = new Array(12).fill(1).map((_, index) => index + 1)
-  readonly numOfLargeIntervals = 12
-  readonly numOfSmallIntervals = 5
-  readonly maxSmallHandValue = 12
-  readonly maxLargeHandValue = 60
-  readonly maxChronoValue = 60
-
-  constructor() {
-    this.#interval = setInterval(this.updateTime.bind(this), 100)
-  }
-
-  ngOnDestroy(): void {
-    if (this.#interval) {
-      clearInterval(this.#interval)
-    }
-  }
-
-  getTime(): Array<Observable<number>> {
-    return [this.hours$, this.minutes$, this.seconds$]
-  }
-
-  private updateTime(): void {
-    const now = new Date()
-    this.#seconds$.next(now.getSeconds())
-    this.#minutes$.next(now.getMinutes())
-    this.#hours$.next(now.getHours())
+export class NormalTimeClockService extends ControllableNormalTimeClockService {
+  constructor(private normalTimeService: NormalTimeService) {
+    super(normalTimeService.time$)
   }
 }

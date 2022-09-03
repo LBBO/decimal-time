@@ -2,18 +2,12 @@ import { Injectable, OnDestroy } from '@angular/core'
 import { ITimeService } from './ITimeService'
 import { Observable, Subject } from 'rxjs'
 import { distinctUntilChanged } from 'rxjs/operators'
+import { NormalTime } from './normal-time.service'
 
 type VTime = {
   v: number,
   deciV: number,
   milliV: number
-}
-
-type NormalTime = {
-  hours: number
-  minutes: number
-  seconds: number
-  milliseconds: number
 }
 
 @Injectable({
