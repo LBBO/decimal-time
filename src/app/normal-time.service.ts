@@ -20,15 +20,20 @@ export class NormalTimeService implements OnDestroy {
   readonly #interval?: ReturnType<typeof setInterval>
 
   public readonly time$: Observable<NormalTime> = combineLatest(
-    this.#hours$.pipe(distinctUntilChanged()), this.#minutes$.pipe(distinctUntilChanged()),
+    this.#hours$.pipe(distinctUntilChanged()),
+    this.#minutes$.pipe(distinctUntilChanged()),
     this.#seconds$.pipe(distinctUntilChanged()),
     this.#milliseconds$.pipe(distinctUntilChanged()),
+  ).pipe(
+    map(
+      ([hours, minutes, seconds, milliseconds]): NormalTime => ({
+        hours,
+        minutes,
+        seconds,
+        milliseconds,
+      }),
+    ),
   )
-    .pipe(map(([hours, minutes, seconds, milliseconds]): NormalTime => (
-      {
-        hours, minutes, seconds, milliseconds,
-      }
-    )))
 
   constructor() {
     this.#interval = setInterval(this.updateTime.bind(this), 100)

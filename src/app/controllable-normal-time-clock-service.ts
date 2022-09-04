@@ -11,11 +11,14 @@ export class ControllableNormalTimeClockService implements ITimeService {
   readonly maxLargeHandValue = 60
   readonly maxChronoValue = 60
 
-  constructor(private readonly time$: Observable<NormalTime>) {
-  }
+  constructor(private readonly time$: Observable<NormalTime>) {}
 
   getTime(): Array<Observable<number>> {
     const time$ = this.time$
-    return [time$.pipe(pluck('hours')), time$.pipe(pluck('minutes')), time$.pipe(pluck('seconds'))]
+    return [
+      time$.pipe(pluck('hours')),
+      time$.pipe(pluck('minutes')),
+      time$.pipe(pluck('seconds')),
+    ]
   }
 }

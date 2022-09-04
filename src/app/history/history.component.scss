@@ -36,7 +36,9 @@
     }
 
     a {
-      &:visited, &:focus, &:active {
+      &:visited,
+      &:focus,
+      &:active {
         color: inherit;
       }
     }

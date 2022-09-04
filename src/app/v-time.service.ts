@@ -4,8 +4,8 @@ import { Observable } from 'rxjs'
 import { map } from 'rxjs/operators'
 
 export type VTime = {
-  v: number,
-  deciV: number,
+  v: number
+  deciV: number
   milliV: number
 }
 
@@ -17,15 +17,13 @@ export class VTimeService {
     map(VTimeService.convertNormalTimeToVTime),
   )
 
-  constructor(private readonly normalTimeService: NormalTimeService) { }
+  constructor(private readonly normalTimeService: NormalTimeService) {}
 
   static getCurrentTime(): VTime {
     return this.convertNormalTimeToVTime(NormalTimeService.getCurrentTime())
   }
 
-  static convertNormalTimeToVTime(
-    normalTime: NormalTime,
-  ): VTime {
+  static convertNormalTimeToVTime(normalTime: NormalTime): VTime {
     const millisecondsPerDay = 24 * 60 * 60 * 1000
     const millisecondsPerV = millisecondsPerDay / 10
     const millisecondsPerDeciV = millisecondsPerV / 100
@@ -41,9 +39,7 @@ export class VTimeService {
     }
   }
 
-  static convertVTimeToNormalTime(
-    vTime: VTime,
-  ): NormalTime {
+  static convertVTimeToNormalTime(vTime: VTime): NormalTime {
     const millisecondsPerDay = 24 * 60 * 60 * 1000
     const millisecondsPerV = millisecondsPerDay / 10
     const millisecondsPerMilliV = millisecondsPerV / 10_000

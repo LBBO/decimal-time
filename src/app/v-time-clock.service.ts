@@ -6,7 +6,9 @@ import { ControllableVTimeClockService } from './controllable-v-time-clock-servi
 @Injectable({
   providedIn: 'root',
 })
-export class VTimeClockService extends ControllableVTimeClockService implements ITimeService {
+export class VTimeClockService
+  extends ControllableVTimeClockService
+  implements ITimeService {
   constructor(private vTimeService: VTimeService) {
     super(vTimeService.time$)
   }

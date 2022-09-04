@@ -15,6 +15,10 @@ export class ControllableVTimeClockService implements ITimeService {
 
   getTime(): Array<Observable<number>> {
     const time$ = this.time$
-    return [time$.pipe(pluck('v')), time$.pipe(pluck('deciV')), time$.pipe(pluck('milliV'))]
+    return [
+      time$.pipe(pluck('v')),
+      time$.pipe(pluck('deciV')),
+      time$.pipe(pluck('milliV')),
+    ]
   }
 }

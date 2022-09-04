@@ -1,6 +1,7 @@
 import { TestBed } from '@angular/core/testing'
 
 import { VTimeClockService } from './v-time-clock.service'
+import { VTimeService } from './v-time.service'
 
 describe('VTimeService', () => {
   let service: VTimeClockService
@@ -16,12 +17,14 @@ describe('VTimeService', () => {
 
   describe('normal time -> v time', () => {
     it('should convert midnight', () => {
-      expect(service.convertNormalTimeToVTime({
-        hours: 0,
-        minutes: 0,
-        seconds: 0,
-        milliseconds: 0,
-      })).toEqual({
+      expect(
+        VTimeService.convertNormalTimeToVTime({
+          hours: 0,
+          minutes: 0,
+          seconds: 0,
+          milliseconds: 0,
+        }),
+      ).toEqual({
         v: 0,
         deciV: 0,
         milliV: 0,
@@ -29,12 +32,14 @@ describe('VTimeService', () => {
     })
 
     it('should convert noon', () => {
-      expect(service.convertNormalTimeToVTime({
-        hours: 12,
-        minutes: 0,
-        seconds: 0,
-        milliseconds: 0,
-      })).toEqual({
+      expect(
+        VTimeService.convertNormalTimeToVTime({
+          hours: 12,
+          minutes: 0,
+          seconds: 0,
+          milliseconds: 0,
+        }),
+      ).toEqual({
         v: 5,
         deciV: 0,
         milliV: 0,
@@ -42,12 +47,14 @@ describe('VTimeService', () => {
     })
 
     it('should convert a quarter day', () => {
-      expect(service.convertNormalTimeToVTime({
-        hours: 6,
-        minutes: 0,
-        seconds: 0,
-        milliseconds: 0,
-      })).toEqual({
+      expect(
+        VTimeService.convertNormalTimeToVTime({
+          hours: 6,
+          minutes: 0,
+          seconds: 0,
+          milliseconds: 0,
+        }),
+      ).toEqual({
         v: 2,
         deciV: 50,
         milliV: 0,
@@ -55,12 +62,14 @@ describe('VTimeService', () => {
     })
 
     it('should convert a minute before noon', () => {
-      expect(service.convertNormalTimeToVTime({
-        hours: 11,
-        minutes: 59,
-        seconds: 0,
-        milliseconds: 0,
-      })).toEqual({
+      expect(
+        VTimeService.convertNormalTimeToVTime({
+          hours: 11,
+          minutes: 59,
+          seconds: 0,
+          milliseconds: 0,
+        }),
+      ).toEqual({
         v: 4,
         deciV: 99,
         milliV: 30,
@@ -69,7 +78,7 @@ describe('VTimeService', () => {
   })
 
   describe('should convert time to vtime and back again', () => {
-    [
+    ;[
       {
         hours: 0,
         minutes: 0,
@@ -94,12 +103,11 @@ describe('VTimeService', () => {
       //   seconds: 12,
       //   milliseconds: 345,
       // },
-    ]
-      .forEach((input) => {
-        it(`for ${input.hours}:${input.minutes} ${input.seconds}.${input.milliseconds}`, () => {
-          const vtime = service.convertNormalTimeToVTime(input)
-          expect(service.convertVTimeToNormalTime(vtime)).toEqual(input)
-        })
+    ].forEach((input) => {
+      it(`for ${input.hours}:${input.minutes} ${input.seconds}.${input.milliseconds}`, () => {
+        const vtime = VTimeService.convertNormalTimeToVTime(input)
+        expect(VTimeService.convertVTimeToNormalTime(vtime)).toEqual(input)
       })
+    })
   })
 })
