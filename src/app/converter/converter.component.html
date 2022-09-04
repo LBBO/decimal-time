@@ -1,73 +1,87 @@
 <h3>Converter</h3>
 <mat-card>
-  <app-clock [timeService]="normalTimeService"></app-clock>
-  <mat-form-field>
-    <mat-label>Hours</mat-label>
-    <input
-      type="number"
-      matInput
-      placeholder="Hours"
-      name="normal-hours"
-      [formControl]="normalHoursInput"
-      (change)="updateVTime()"
-    />
-  </mat-form-field>
-  <mat-form-field>
-    <mat-label>Minutes</mat-label>
-    <input
-      type="number"
-      matInput
-      placeholder="Minutes"
-      name="normal-minutes"
-      [formControl]="normalMinutesInput"
-      (change)="updateVTime()"
-    />
-  </mat-form-field>
-  <mat-form-field>
-    <mat-label>Seconds</mat-label>
-    <input
-      type="number"
-      matInput
-      placeholder="Seconds"
-      name="normal-seconds"
-      [formControl]="normalSecondsInput"
-      (change)="updateVTime()"
-    />
-  </mat-form-field>
+  <mat-card-header>
+    <mat-card-title>Standard time</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="card-content">
+    <app-clock [timeService]="normalTimeService"></app-clock>
+    <div class="input-row">
+      <mat-form-field>
+        <mat-label>Hours</mat-label>
+        <input
+          type="number"
+          matInput
+          placeholder="Hours"
+          name="normal-hours"
+          [formControl]="normalHoursInput"
+          (change)="updateVTime()"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Minutes</mat-label>
+        <input
+          type="number"
+          matInput
+          placeholder="Minutes"
+          name="normal-minutes"
+          [formControl]="normalMinutesInput"
+          (change)="updateVTime()"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Seconds</mat-label>
+        <input
+          type="number"
+          matInput
+          placeholder="Seconds"
+          name="normal-seconds"
+          [formControl]="normalSecondsInput"
+          (change)="updateVTime()"
+        />
+      </mat-form-field>
+    </div>
+  </mat-card-content>
 </mat-card>
 <mat-card>
-  <app-clock [timeService]="vTimeService"></app-clock>
-  <mat-form-field>
-    <mat-label>Hours</mat-label>
-    <input
-      type="number"
-      matInput
-      placeholder="Hours"
-      name="v-hours"
-      [formControl]="vHoursInput"
-      (change)="updateNormalTime()"
-    />
-  </mat-form-field>
-  <mat-form-field>
-    <mat-label>Minutes</mat-label>
-    <input
-      type="number"
-      matInput
-      placeholder="Minutes"
-      name="v-minutes"
-      [formControl]="vMinutesInput"
-      (change)="updateNormalTime()"
-    />
-  </mat-form-field>
-  <mat-form-field>
-    <mat-label>Seconds</mat-label>
-    <input
-      type="number"
-      matInput
-      placeholder="Seconds"
-      name="v-seconds"
-      [formControl]="vSecondsInput"
-      (change)="updateNormalTime()"
-    />
-  </mat-form-field>
+  <mat-card-header>
+    <mat-card-title>Decimal time</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="card-content">
+    <app-clock [timeService]="vTimeService"></app-clock>
+    <div class="input-row">
+      <mat-form-field>
+        <mat-label>Hours</mat-label>
+        <input
+          type="number"
+          matInput
+          placeholder="Hours"
+          name="v-hours"
+          [formControl]="vHoursInput"
+          (change)="updateNormalTime()"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Minutes</mat-label>
+        <input
+          type="number"
+          matInput
+          placeholder="Minutes"
+          name="v-minutes"
+          [formControl]="vMinutesInput"
+          (change)="updateNormalTime()"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Seconds</mat-label>
+        <input
+          type="number"
+          matInput
+          placeholder="Seconds"
+          name="v-seconds"
+          [formControl]="vSecondsInput"
+          (change)="updateNormalTime()"
+        />
+      </mat-form-field>
+    </div>
+  </mat-card-content>
 </mat-card>
