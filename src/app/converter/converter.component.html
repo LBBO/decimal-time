@@ -9,6 +9,7 @@
       placeholder="Hours"
       name="normal-hours"
       [formControl]="normalHoursInput"
+      (change)="updateVTime()"
     />
   </mat-form-field>
   <mat-form-field>
@@ -19,6 +20,7 @@
       placeholder="Minutes"
       name="normal-minutes"
       [formControl]="normalMinutesInput"
+      (change)="updateVTime()"
     />
   </mat-form-field>
   <mat-form-field>
@@ -29,6 +31,7 @@
       placeholder="Seconds"
       name="normal-seconds"
       [formControl]="normalSecondsInput"
+      (change)="updateVTime()"
     />
   </mat-form-field>
 </mat-card>
@@ -42,6 +45,7 @@
       placeholder="Hours"
       name="v-hours"
       [formControl]="vHoursInput"
+      (change)="updateNormalTime()"
     />
   </mat-form-field>
   <mat-form-field>
@@ -52,6 +56,7 @@
       placeholder="Minutes"
       name="v-minutes"
       [formControl]="vMinutesInput"
+      (change)="updateNormalTime()"
     />
   </mat-form-field>
   <mat-form-field>
@@ -62,6 +67,7 @@
       placeholder="Seconds"
       name="v-seconds"
       [formControl]="vSecondsInput"
+      (change)="updateNormalTime()"
     />
   </mat-form-field>
 </mat-card>

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 import { combineLatest, Observable } from 'rxjs'
 import { NormalTime } from '../normal-time.service'
-import { VTime } from '../v-time.service'
+import { VTime, VTimeService } from '../v-time.service'
 import { ControllableNormalTimeClockService } from '../controllable-normal-time-clock-service'
 import { ControllableVTimeClockService } from '../controllable-v-time-clock-service'
 import { FormControl } from '@angular/forms'
@@ -64,4 +64,29 @@ export class ConverterComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  updateVTime(): void {
+    const normalTime: NormalTime = {
+      hours: this.normalHoursInput.value,
+      minutes: this.normalMinutesInput.value,
+      seconds: this.normalSecondsInput.value,
+      milliseconds: 0,
+    }
+    const vTime: VTime = VTimeService.convertNormalTimeToVTime(normalTime)
+    this.vHoursInput.setValue(vTime.v)
+    this.vMinutesInput.setValue(vTime.deciV)
+    this.vSecondsInput.setValue(vTime.milliV)
+  }
+
+  updateNormalTime(): void {
+    const vTime: VTime = {
+      v: this.vHoursInput.value,
+      deciV: this.vMinutesInput.value,
+      milliV: this.vSecondsInput.value,
+    }
+    const normalTime = VTimeService.convertVTimeToNormalTime(vTime)
+    this.normalHoursInput.setValue(normalTime.hours)
+    this.normalMinutesInput.setValue(normalTime.minutes)
+    this.normalSecondsInput.setValue(normalTime.seconds)
+  }
 }
