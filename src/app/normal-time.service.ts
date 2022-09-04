@@ -34,6 +34,16 @@ export class NormalTimeService implements OnDestroy {
     this.#interval = setInterval(this.updateTime.bind(this), 100)
   }
 
+  static getCurrentTime(): NormalTime {
+    const now = new Date()
+    return {
+      hours: now.getHours(),
+      minutes: now.getMinutes(),
+      seconds: now.getSeconds(),
+      milliseconds: now.getMilliseconds(),
+    }
+  }
+
   ngOnDestroy(): void {
     if (this.#interval) {
       clearInterval(this.#interval)

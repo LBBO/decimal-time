@@ -6,6 +6,7 @@
   <mat-menu #appMenu="matMenu">
     <a mat-menu-item [routerLink]="['']"> Home </a>
     <a mat-menu-item [routerLink]="['history']"> History </a>
+    <a mat-menu-item [routerLink]="['converter']"> Converter </a>
     <a mat-menu-item [routerLink]="['about']"> About </a>
     <a
       mat-menu-item
@@ -28,6 +29,7 @@
   <ng-template [ngIf]="!(isScreenSmall$ | async)">
     <div class="spacer"></div>
     <a [routerLink]="['history']">History</a>
+    <a [routerLink]="['converter']">Converter</a>
     <a [routerLink]="['about']">About</a>
     <a
       mat-button

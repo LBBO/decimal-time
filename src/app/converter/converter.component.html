@@ -1,0 +1,67 @@
+<h3>Converter</h3>
+<mat-card>
+  <app-clock [timeService]="normalTimeService"></app-clock>
+  <mat-form-field>
+    <mat-label>Hours</mat-label>
+    <input
+      type="number"
+      matInput
+      placeholder="Hours"
+      name="normal-hours"
+      [formControl]="normalHoursInput"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Minutes</mat-label>
+    <input
+      type="number"
+      matInput
+      placeholder="Minutes"
+      name="normal-minutes"
+      [formControl]="normalMinutesInput"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Seconds</mat-label>
+    <input
+      type="number"
+      matInput
+      placeholder="Seconds"
+      name="normal-seconds"
+      [formControl]="normalSecondsInput"
+    />
+  </mat-form-field>
+</mat-card>
+<mat-card>
+  <app-clock [timeService]="vTimeService"></app-clock>
+  <mat-form-field>
+    <mat-label>Hours</mat-label>
+    <input
+      type="number"
+      matInput
+      placeholder="Hours"
+      name="v-hours"
+      [formControl]="vHoursInput"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Minutes</mat-label>
+    <input
+      type="number"
+      matInput
+      placeholder="Minutes"
+      name="v-minutes"
+      [formControl]="vMinutesInput"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Seconds</mat-label>
+    <input
+      type="number"
+      matInput
+      placeholder="Seconds"
+      name="v-seconds"
+      [formControl]="vSecondsInput"
+    />
+  </mat-form-field>
+</mat-card>

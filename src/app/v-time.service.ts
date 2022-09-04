@@ -14,12 +14,16 @@ export type VTime = {
 })
 export class VTimeService {
   public readonly time$: Observable<VTime> = this.normalTimeService.time$.pipe(
-    map(this.convertNormalTimeToVTime),
+    map(VTimeService.convertNormalTimeToVTime),
   )
 
   constructor(private readonly normalTimeService: NormalTimeService) { }
 
-  convertNormalTimeToVTime(
+  static getCurrentTime(): VTime {
+    return this.convertNormalTimeToVTime(NormalTimeService.getCurrentTime())
+  }
+
+  static convertNormalTimeToVTime(
     normalTime: NormalTime,
   ): VTime {
     const millisecondsPerDay = 24 * 60 * 60 * 1000
@@ -37,7 +41,7 @@ export class VTimeService {
     }
   }
 
-  convertVTimeToNormalTime(
+  static convertVTimeToNormalTime(
     vTime: VTime,
   ): NormalTime {
     const millisecondsPerDay = 24 * 60 * 60 * 1000
