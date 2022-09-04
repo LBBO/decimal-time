@@ -4,7 +4,7 @@
     <mat-card-title>Standard time</mat-card-title>
   </mat-card-header>
   <mat-card-content class="card-content">
-    <app-clock [timeService]="normalTimeService"></app-clock>
+    <app-clock [timeService]="normalTimeClockService"></app-clock>
     <p>
       This is how you are used to measuring time. There are 24 hours in a day,
       60 minutes in an hour, and 60 seconds in a minute. You probably learned
@@ -31,7 +31,7 @@
     </mat-card-title>
   </mat-card-header>
   <mat-card-content class="card-content">
-    <app-clock [timeService]="vTimeService"></app-clock>
+    <app-clock [timeService]="vTimeClockService"></app-clock>
     <p>
       As opposed to the standard time measuring system, this system divides
       units into multiples of 10. The day is divided into 10 <em>hours</em>, one

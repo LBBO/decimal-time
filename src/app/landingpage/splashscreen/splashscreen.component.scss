@@ -26,7 +26,8 @@
       content: '';
       display: block;
       $color: rgba(0, 0, 0, 0.55);
-      background: linear-gradient($color, $color), url('~src/assets/splashscreen-background.jpg');
+      background: linear-gradient($color, $color),
+        url('~src/assets/splashscreen-background.jpg');
       background-size: cover;
       background-position: 50% 50%;
       width: 110%;
