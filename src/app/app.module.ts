@@ -14,9 +14,18 @@ import { MatButtonModule } from '@angular/material/button'
 import { MatIconModule } from '@angular/material/icon'
 import { MatDividerModule } from '@angular/material/divider'
 import { MatMenuModule } from '@angular/material/menu'
+import { ConverterComponent } from './converter/converter.component'
+import { MatFormFieldModule } from '@angular/material/form-field'
+import { ReactiveFormsModule } from '@angular/forms'
+import { MatInputModule } from '@angular/material/input'
 
 @NgModule({
-  declarations: [AppComponent, NavigationComponent, AboutComponent],
+  declarations: [
+    AppComponent,
+    NavigationComponent,
+    AboutComponent,
+    ConverterComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -29,6 +38,9 @@ import { MatMenuModule } from '@angular/material/menu'
     MatIconModule,
     MatDividerModule,
     MatMenuModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

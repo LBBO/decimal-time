@@ -16,6 +16,13 @@
     </a>
     <a
       mat-menu-item
+      [routerLink]="['converter']"
+      i18n="converter|Converter link@@nav-converter"
+    >
+      Converter
+    </a>
+    <a
+      mat-menu-item
       [routerLink]="['about']"
       i18n="about|About link@@nav-about"
     >
@@ -69,6 +76,12 @@
       >History</a
     >
     <a [routerLink]="['about']" i18n="about|About link@@nav-about">About</a>
+    <a
+      [routerLink]="['converter']"
+      i18n="converter|Converter link@@nav-converter"
+    >
+      Converter
+    </a>
     <a
       class="flag"
       *ngIf="locale !== 'en-US'"
